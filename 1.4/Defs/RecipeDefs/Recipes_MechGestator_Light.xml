@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Standard Entertainer -->
+  <RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>EM_Mech_Scurra</defName>
+    <label>gestate scurra</label>
+    <description>Gestate a scurra mechanoid.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <recipeUsers>
+      <li>MechGestator</li>
+    </recipeUsers>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <EM_Mech_Scurra>1</EM_Mech_Scurra>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>EM_Mech_Scurra</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+</Defs>

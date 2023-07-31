@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Standard Entertainer -->
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="LightMechanoid">
+		<defName>EM_Mech_Scurra</defName>
+		<label>scurra</label>
+		<description>Scurra is a delightful and endearing robot designed with the sole purpose of providing joy and entertainment to guests. With its charming and engaging personality, Scurra excels in interactive games, dancing, and engaging conversations. However, owing to its slight and slender frame, it lacks any offensive capabilities, making it wholly inefficient in combat scenarios. Can do entertainment tasks at skill level 10</description>
+		<statBases>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+		</statBases>
+		<race>
+			<body>EM_Body</body>
+			<mechEnabledWorkTypes>
+				<li>Diplomat</li>
+			</mechEnabledWorkTypes>
+			<mechWorkTypePriorities>
+				<Diplomat>1</Diplomat>
+			</mechWorkTypePriorities>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+	<PawnKindDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="NonCombatLightMechanoidKind">
+		<defName>EM_Mech_Scurra</defName>
+		<label>scurra</label>
+		<race>EM_Mech_Scurra</race>
+		<lifeStages>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Pawn/Mechanoid/Fabricor</texPath>
+            <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Fabricor</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.1</drawSize>
+          </bodyGraphicData>
+        </li>
+        <li>
+          <bodyGraphicData>
+            <texPath>Things/Pawn/Mechanoid/FabricorAncient</texPath>
+            <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Fabricor</maskPath>
+            <shaderType>CutoutWithOverlay</shaderType>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>1.1</drawSize>
+          </bodyGraphicData>
+        </li>
+      </lifeStages>
+	</PawnKindDef>
+</Defs>

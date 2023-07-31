@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <BodyPartDef>
+    <defName>MechanicalSpeaker</defName>
+    <label>speaker</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+    <tags>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+</Defs>
